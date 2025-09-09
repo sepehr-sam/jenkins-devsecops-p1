@@ -1,7 +1,7 @@
 pipeline {
   agent any
   options { timestamps() }
-  triggers { pollSCM('H/5 * * * *') } // scheduled polling, no webhook needed
+  triggers { pollSCM('H/5 * * * *') } // scheduled polling, 
 
   stages {
     stage('Build') {
